@@ -1,0 +1,128 @@
+.services {
+    width: 100%;
+    background-color: white;  
+    display: flex;
+    justify-content: center;
+}
+.services-wrapper {
+    padding: 1rem 1rem;
+    color: #1F2245;
+    max-width: 1224px;
+    width: 100%;
+}
+.headline-box {
+    display: flex;
+    justify-content: center;
+}
+.card-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+.card-bg {
+    border-radius: 0.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.premium {
+    background-color: #FB398B;
+}
+.regular {
+    background-color: #fda6d0;
+}
+.worst {
+    background-color: #5AB9E9;
+}
+
+.card {
+    border-radius: 0.3rem;
+    background-image: url(./Resurs\ 6.png);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+
+
+.card-title {
+    margin: .5rem  0rem;
+}
+.card-info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0.7rem;
+    justify-content: space-between;
+
+}
+
+.card-text-wrap {
+    flex: 1; /* Let it take up 50% of the available space */
+    max-width: 50%; /* Limit the width to 50% */
+    display: flex; /* Add display flex to control alignment of text and price */
+    flex-direction: column; /* Stack the text and price vertically */
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem; /* Add padding for spacing */
+}
+
+.card-img {
+    width: 50%;
+    max-width: 50%; /* Ensure image doesn't overflow */
+    border-radius: .3rem;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.card-price {
+    font-size: 16px;
+}
+.buy {
+    height: 2rem;
+    border-style: none;
+    border-radius: 0.6rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adjust the shadow values as needed */
+    font-family: 'CircularBold';
+    background: linear-gradient( #ffb4de 10%, #E71D73 100%);
+    color: white;
+}
+
+
+@media screen and (min-width: 640px) {
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-wrapper {
+        padding: 1rem 1rem;
+    
+    }
+    .card-bg {
+        height: 19rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card-box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: .4rem;
+    }
+    .services-wrapper {
+        padding: 1rem 0rem;
+    
+    }
+    .card-bg {
+        height: 16rem;
+    }
+}
